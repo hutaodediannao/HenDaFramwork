@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rd0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@android:drawable/ic_dialog_map"
+            android:text="申请记录"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:checked="true"
+            android:textColor="@drawable/text_color_selector"/>
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="申请代办"
+            android:drawableTop="@android:drawable/sym_action_chat"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@drawable/text_color_selector"/>
+
+    </RadioGroup>
+
+</FrameLayout>
